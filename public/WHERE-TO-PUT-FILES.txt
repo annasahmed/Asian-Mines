@@ -1,0 +1,38 @@
+Put your files here. Keep these names. jpg, jpeg, png, webp, and avif all work for pictures. Films should be mp4 (H.264) or webm. Optional English captions use the same name with .vtt.
+
+Logo
+  public/brand/logo.png
+  also: logo.svg, logo.webp, logo.jpg, logo.jpeg
+  Shown beside the wordmark, about 46 pixels tall. A square monogram reads best on the dark header.
+
+Films
+  public/media/videos/plant.mp4           company film (also the home page background on a wide screen)
+  public/media/videos/metallurgical.mp4   metallurgical grade
+  Optional posters and captions use the same base name: plant.jpg, plant.vtt, metallurgical.jpg, metallurgical.vtt.
+
+Product photographs
+  public/media/products/chrome ore lumpy.jpg
+  public/media/products/chrome ore concentrate.jpg
+  public/media/products/chrome ore fines.jpg
+  public/media/products/chrome ore natural.jpg
+  public/media/products/chrome ore refactory.jpg
+  public/media/products/chrome ore semi-refactory.jpg
+  public/media/products/yard.jpg
+  public/media/products/sample.jpg
+  public/media/products/loading.jpg
+  public/media/products/stockpile.jpg
+
+Company photographs already in use
+  public/media/company/azizullah.jpg
+  public/media/company/award.jpeg
+  public/media/company/award-main.jpg
+  public/media/company/shabbir.jpg
+  public/media/company/aziz-china.jpeg
+  public/media/company/aziz-shabbir-china.jpeg
+
+Compress large films before replacing them. The home page film is muted and plays only on a wide screen. The film pages wait for a press.
+
+Company email, phone, WhatsApp, and address are in src/lib/site.ts.
+Set NEXT_PUBLIC_SITE_URL to the real domain before launch.
+
+If a new file does not appear, refresh the page. If it still does not, stop and start npm run dev.

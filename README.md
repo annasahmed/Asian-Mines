@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Asian Mines and Minerals
 
-## Getting Started
+Next.js site for Asian Mines and Minerals, a Pakistani chrome ore exporter selling mainly to China, and also to Oman and Europe.
 
-First, run the development server:
+## Run
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Your logo, films, and photographs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+File names and folders are listed in `public/WHERE-TO-PUT-FILES.txt`.
 
-## Learn More
+Drop the logo in `public/brand/`. Drop product pictures in `public/media/products/`. The company film and the metallurgical film belong in `public/media/videos/`. Until a product photograph is there, that frame shows a catalog drawing.
 
-To learn more about Next.js, take a look at the following resources:
+## Company details
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Email, phone, WhatsApp, and the Karachi address live in `src/lib/site.ts`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Before launch, set `NEXT_PUBLIC_SITE_URL` to the live domain so the sitemap and sharing cards use it.
