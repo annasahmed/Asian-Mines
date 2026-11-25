@@ -78,7 +78,6 @@ export default function ChromeOrePage() {
                   kicker={product.kicker}
                   caption={product.summary}
                   variant={product.variant}
-                  index={product.index}
                   ratio="square"
                 />
               </li>
@@ -169,7 +168,6 @@ export default function ChromeOrePage() {
                   kicker={item.kicker}
                   caption={item.summary}
                   variant={item.variant}
-                  index={item.index}
                   ratio="square"
                   sizes="(max-width: 720px) 100vw, 250px"
                 />

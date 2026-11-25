@@ -104,7 +104,7 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="section">
-        <div className="shell split">
+        <div className="shell split award-split">
           <div className="prose">
             <h2>The trophy</h2>
             <p>
@@ -120,7 +120,8 @@ export default function AboutPage() {
             kicker="2023"
             caption="Engraved for Asian Mines and Minerals, Karachi, chrome ore."
             ratio="portrait"
-            sizes="(max-width: 800px) 100vw, 480px"
+            sizes="280px"
+            className="award-plate"
           />
         </div>
       </section>

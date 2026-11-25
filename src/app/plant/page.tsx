@@ -109,7 +109,6 @@ export default function PlantPage() {
                   kicker={item.kicker}
                   caption={item.summary}
                   variant={item.variant}
-                  index={item.index}
                   ratio="square"
                   sizes="(max-width: 720px) 100vw, 260px"
                 />

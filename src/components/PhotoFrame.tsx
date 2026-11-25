@@ -9,11 +9,11 @@ type PhotoFrameProps = {
 	kicker?: string;
 	caption?: string;
 	variant?: number;
-	index?: string;
 	priority?: boolean;
 	sizes?: string;
 	ratio?: "portrait" | "wide" | "square";
 	bare?: boolean;
+	className?: string;
 };
 
 export function PhotoFrame({
@@ -23,18 +23,16 @@ export function PhotoFrame({
 	kicker,
 	caption,
 	variant = 0,
-	index,
 	priority = false,
 	sizes = "(max-width: 800px) 100vw, 360px",
 	ratio = "portrait",
 	bare = false,
+	className,
 }: PhotoFrameProps) {
 	const src = resolveImage(imageBase);
 
-	console.log(src, "chkking src");
-
 	return (
-		<figure className="plate">
+		<figure className={className ? `plate ${className}` : "plate"}>
 			<div className={`plate-media ${ratio}`}>
 				{src ? (
 					<Image
@@ -48,7 +46,6 @@ export function PhotoFrame({
 				) : (
 					<Specimen variant={variant} />
 				)}
-				{index ? <span className="plate-index">{index}</span> : null}
 			</div>
 			{bare ? null : (
 				<figcaption>

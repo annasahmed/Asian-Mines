@@ -127,9 +127,9 @@ a { color: inherit; }
 
 .brand-logo {
   display: block;
-  height: 2.85rem;
+  height: 2.7rem;
   width: auto;
-  max-width: 5.6rem;
+  max-width: 7.4rem;
   object-fit: contain;
 }
 
@@ -442,6 +442,11 @@ a { color: inherit; }
 }
 
 .plate { margin: 0; }
+
+.award-plate {
+  width: min(100%, 17.5rem);
+  margin-inline: auto;
+}
 
 .plate-media {
   position: relative;
@@ -878,6 +883,10 @@ section[id], h2[id], h3[id] { scroll-margin-top: 6rem; }
   .hero { padding: 5.5rem 0 7rem; }
   .hero-grid { grid-template-columns: minmax(0, 40rem); }
   .split, .contact-layout, .market-block { grid-template-columns: 0.9fr 1.1fr; }
+  .award-split {
+    grid-template-columns: minmax(0, 1fr) 17.5rem;
+    align-items: center;
+  }
   .film-grid { grid-template-columns: 1fr 1fr; }
   .steps { grid-template-columns: 1fr 1fr 1fr; }
   .split .steps { grid-template-columns: 1fr; }

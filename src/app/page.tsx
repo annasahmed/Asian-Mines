@@ -130,7 +130,6 @@ export default function HomePage() {
                   kicker={product.kicker}
                   caption={product.summary}
                   variant={product.variant}
-                  index={product.index}
                   ratio="square"
                 />
               </li>
@@ -156,7 +155,7 @@ export default function HomePage() {
       </section>
 
       <section className="section" id="award">
-        <div className="shell split">
+        <div className="shell split award-split">
           <div>
             <SectionHeading
               index="05"
@@ -179,7 +178,8 @@ export default function HomePage() {
             kicker="2023"
             caption="Awarded by the Federation of Pakistan Chambers of Commerce and Industry."
             ratio="portrait"
-            sizes="(max-width: 800px) 100vw, 520px"
+            sizes="280px"
+            className="award-plate"
           />
         </div>
       </section>
@@ -201,7 +201,6 @@ export default function HomePage() {
                   title={item.title}
                   kicker={item.kicker}
                   caption={item.summary}
-                  index={item.index}
                   ratio={item.ratio}
                   sizes="(max-width: 800px) 100vw, 540px"
                 />
